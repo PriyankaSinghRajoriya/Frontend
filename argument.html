@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Practice</title>
+</head>
+
+<body>
+    <h1>Function :-</h1>
+
+    <script>
+        // Rest Paramenter/ Operator.
+        
+        function show(a, ...args) {
+
+            console.log("a:" + a)
+            console.log(args)
+
+        }
+        show(10, 20, 30, 40, 50);
+
+
+        // Argument object.
+
+        function show(a) {
+
+          console.log("a:" + a)
+           console.log(arguments)
+
+        }
+        show(10, 20, 30, 40, 50);
+    </script>
+</body>
+
+</html>

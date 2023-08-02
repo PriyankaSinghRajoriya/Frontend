@@ -1,0 +1,33 @@
+.container{
+   
+    border: 5px solid black;
+    
+}
+
+
+.ss{
+    height: 15vh;
+    /* background-color: blueviolet; */
+    display: inline-block;
+   
+}
+.zz{
+    height: 50px;
+    background-color: orange;
+   
+}
+.zz ul{
+    list-style: none;
+    margin: 0px;
+}
+.zz ul li{
+  display: inline-block
+}
+.col-9{
+    height: 55vh;
+    background-color: peru;
+}
+.footer{
+    height: 50px;
+    background-color: rgb(38, 123, 183);
+}

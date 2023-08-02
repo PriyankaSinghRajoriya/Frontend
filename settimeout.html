@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>setTimeout :-</h1>
+
+    <p id="demo"></p>
+
+    <button id="btn" >Clear Interval</button>
+
+    <script>
+
+// ---------this is the setTimeout---------
+
+    //   var timeoutid = setTimeout(function show(){
+    //         document.getElementById('demo').innerText = "Hello world!";
+    //         document.getElementById('demo').style.color = 'red';
+    //     },5000);
+
+    //     function clear(){
+    //         clearTimeout(timeoutid);
+    //     }
+
+    //     document.getElementById('btn').addEventListener('click',clear)
+
+
+    // ---------this is the setInterval---------
+
+   var intervalId = setInterval(function show(){
+        document.getElementById('demo').innerText += "Priyanka"
+    },2000)
+
+    function clear(){
+        clearInterval(intervalId);
+    }
+    document.getElementById('btn').addEventListener('click',clear)
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Callback</h1>
+
+    <script>
+       
+// ---------synchronous-----------
+
+// function fun()
+// {
+//     console.log("Maintain everything in life...")
+// }
+
+// function display(callback)
+// {
+//     callback()
+// }
+
+// display(fun);
+// console.log("end")
+
+
+// ---------asynchronous-----------
+
+setTimeout(function show(){
+    console.log(" No-one can achieve anything without Prictice... ")
+},5000);
+
+setTimeout(function show(){
+    console.log("First")
+},3000);
+
+console.log("not bad")
+
+setTimeout(function show(){
+    console.log(" Second ")
+},2000);
+
+setTimeout(function show(){
+    console.log(" Third ")
+},2000);
+
+console.log("Fulfilled")
+
+setTimeout(function show(){
+    console.log(" Fourth")
+},1000);
+
+console.log("Killed")
+
+console.log("Afterall,End this proccess")
+    </script>
+</body>
+</html>

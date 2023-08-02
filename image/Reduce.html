@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <h1>Reduce Method</h1>
+    <script>
+        var arr = [1, 2, 3, 0, 3, 2, 1]
+        var x = arr.reduce((acc, curr) => {
+            // acc = acc - curr
+            return acc + curr;
+        })
+
+        console.log(x)
+
+        // function show(acc,cur){
+        //     acc = acc * cur;
+        //     return acc;
+        // }
+
+        // const arr2 = arr.reduce(show)
+        // console.log(arr2)
+
+
+        // syntax
+
+        // arr.filter((total,currentValue,currentIndex,arr),initialValue)
+    </script>
+</body>
+
+</html>

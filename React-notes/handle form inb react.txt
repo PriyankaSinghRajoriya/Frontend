@@ -1,0 +1,40 @@
+import { useState } from "react"
+import "./App.css"
+import React from 'react'
+
+export default function App() {
+const [name,setName] = useState("");
+const [mobile,setMobile] = useState("");
+const [password,setPassword] = useState("");
+const [option,setOption] = useState("");
+const [remember,setRemember] =useState(false)
+
+
+
+ const getFormData = (e) => {
+  console.log(name,mobile,password,option,remember)
+    e.preventDefault()
+
+  }
+
+  return (
+    <div className='App'>
+      <form onSubmit={getFormData}>
+        <h1>User Form</h1>
+        Name:<input type="text" onChange={(e)=>setName(e.target.value)} /><br /><br />
+        Mobile: <input type="text" onChange={(e)=>setMobile(e.target.value)} /><br /><br />
+        Password: <input type="password" onChange={(e)=>setPassword(e.target.value)} /><br /><br />
+        Choose Anyone: <select onChange={(e)=>setOption(e.target.value)}>
+          <option>Select Options</option>
+          <option>Mango</option>
+          <option>Naseberry</option>
+          <option>Gauva</option>
+        </select><br /><br />
+        <input type="checkbox" onChange={(e)=>setRemember (e.target.checked)} /> <span>Remember me.</span><br /><br />
+        <button type="submit" >Submit</button>
+        
+      </form>
+
+    </div>
+  )
+}

@@ -1,0 +1,84 @@
+* Props with Class Component------------
+
+
+   App.js
+============
+
+import './App.css';
+// import User from './User';
+import Student from './Student';
+
+function App() {
+
+  return (
+    <div className='App'>
+      <h1>Props in react !</h1>
+     <Student name={"Raj"} email={"abc@.com"} other={{mobile:"0000"}}/>
+      
+    </div>
+  )
+}
+
+export default App;
+
+
+    
+
+    Student.js
+==================
+
+
+import React,{Component} from "react";
+
+ class Student extends Component{
+
+    render()
+    {
+        return(
+            <div style={{backgroundColor:"skyblue"}}>
+                <h1>Name: {this.props.name}</h1>
+                <h3>Email: {this.props.email}</h3>
+                <h5>Mobike: {this.props.other.mobile}</h5>
+            </div>
+        )
+    }
+
+}
+export default Student;
+
+
+
+---------------Updata data on Button click------------------
+
+
+
+import { Component } from 'react';
+import './App.css';
+// import User from './User';
+import Student from './Student';
+
+
+class App extends Component{
+constructor()
+{
+  super();
+  this.state={
+    name:"Anushka"
+  }
+}
+ render()
+ {
+  return (
+    <div className='App'>
+      <h1>Props in react !</h1>
+     <Student name={this.state.name}/>
+      <button onClick={()=>this.setState({name:"Mansi"})}>click me</button>
+    </div>
+  )
+ }
+}
+
+export default App;
+
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        .main {
+            height: 100vh;
+            width: 100%;
+            background-image: url('./image/Banner.jpg');
+            background-size: cover;
+        }
+
+        .overlay {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(0, 0, 0, 0.7);
+        }
+
+        .title {
+            /* padding: 35px; */
+        }
+
+        h1,
+        h2 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 15px;
+            font-size: 45px;
+        }
+
+        .col {
+            height: 100px;
+            width: 750px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-left: 25%;
+            margin-top: 35px;
+        }
+
+        .col div {
+            width: 250px;
+
+        }
+
+        input {
+            
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            background-color: rgb(255, 255, 255, 0.7);
+            border-color: transparent;
+            border-radius: 5px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="overlay">
+            <div class="title">
+                <h1>We are coming soon</h1>
+                <h2>19 April 2023 05:00</h2>
+            </div>
+            <div class="col">
+                <div>
+                    <input type="text" readonly value="0"><br>
+                    <label>Days</label>
+                </div>
+
+                <div>
+                    <input type="text" readonly value="0"><br>
+                    <label>Hours</label>
+                </div>
+
+                <div>
+                    <input type="text" readonly value="0"><br>
+                    <label>Minutes</label>
+                </div>
+
+                <div>
+                    <input type="text" readonly value="0"><br>
+                    <label>Seconds</label>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+<script src="count.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>function</title>
+</head>
+
+<body>
+  <h1>Async & Await</h1>
+  <script>
+    //  async function test()
+    //   {
+    //     return "This function working successfully";
+    //   }
+
+    //  let test = async function()
+    //     {
+    //       return "This function working successfully";
+    //     }
+
+
+    // let test = async () => "This function working successfully";
+    // test().then((data) => {
+    //   console.log(data)
+    // })
+
+    let display = async()=>{
+      console.log('2:message');
+      await console.log('3:message');
+      console.log('4:message');
+    }
+    console.log('1:message');
+    display();
+    console.log('5:message')
+  </script>
+</body>
+
+</html>

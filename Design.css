@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav {
+    height: 10vh;
+    margin-left: 50% !important;
+}
+
+.ss{
+    min-height: 95vh;
+    background-image: url('./image/s1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+
+.btn1{
+    position: absolute;
+    top: 60%;
+    left: 43%;
+
+}
+
+.abc{
+    height: 45vh;
+    background-image: url('./image/s2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+   
+   
+}

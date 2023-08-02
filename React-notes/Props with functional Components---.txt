@@ -1,0 +1,74 @@
+Props with functional Components----------
+
+
+          ======App.js=====
+
+
+
+import User from "./User";
+// import Student from "./Student";
+import React from "react";
+
+
+function App(){
+    return(
+      <div>
+        <User name={"Priyank"} address={"Madhav ganj"} other={{email:"abc@com",age:'25'}}/>
+        <User name={"Raj"} address={"Delhi"} other={{email:"xyz@com",age:'26'}}/>
+        <User name={"Jay"} address={"Noida"} other={{email:"yyy@com",age:'27'}}/>
+      
+      </div>
+    )
+  
+}
+
+export default App;
+
+
+
+
+      User.js
+=======================
+
+
+function User(props){
+    return(
+        <div style={{background:'orange', margin:25}}>
+            <h2>Hello {props.name}</h2>
+            <h3>{props.address}</h3>
+            <h3>Other: {props.other.email}</h3>
+            <h3> {props.other.age}</h3>
+
+        </div>
+    )
+}
+
+export default User;
+
+
+
+
+------------------how to change props name --------------------
+
+
+import './App.css';
+import User from './User';
+import React,{useState} from 'react';
+
+function App() {
+  const[name,setname] = useState("Lord Shiv");
+  return (
+    <div className='App'>
+      <h1>Props in react !</h1>
+      <User name={name}/>
+      <button onClick={()=>{setname("Priyanka")}}>update name</button>
+      
+    </div>
+  )
+}
+
+export default App;
+ 
+
+
+ 

@@ -1,0 +1,89 @@
+                               -----------------------------Login Form-------------------------
+
+
+import React, { useState } from 'react'
+import './style.css'
+
+export default function Form() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [allEntry, setAllEntry] = useState([]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newEntry = { email: email, password: password }
+    setAllEntry([...allEntry, newEntry])
+  }
+
+
+  return (
+    <div className='App' >
+
+      <form className='login' onSubmit={handleSubmit}>
+        <h1 style={{ color: "red" }}>Login Form</h1><br /><br />
+        <div className='input'>
+          Email : <input type="text" value={email} autoComplete='off' onChange={(e) => setEmail(e.target.value)} /><br /><br />
+          Password : <input type="Password" value={password} autoComplete='off' onChange={(e) => setPassword(e.target.value)} /><br /><br />
+          <button type='submit'>Login</button>
+        </div>
+
+        {/* <div>
+
+          {
+            allEntry.map((currelement) => {
+              return (
+                <div>
+                  <p>{currelement.email}</p>
+                  <p>{currelement.password}</p>
+                </div>
+              )
+            })}
+
+        </div> */}
+      </form>
+    </div>
+  )
+}
+
+
+
+
+
+------------------------------------------Style.css--------------------------------------------
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.App{
+    height: 100vh;
+    /* background-color: #435B66; */
+    background-image: url('./girl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login{
+    height: 220px;
+    width: 450px;
+    background-color: rgb(0,0,0,0.5);
+    border: 1px solid orange;
+    border-radius: 50px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    padding: 20px;
+}
+.input{
+    color: gray;
+}
+button{
+    width: 100px;
+    padding: 5px;
+    border: 1px solid orange;
+    border-radius: 20px;
+    background: black;
+    color: red;
+    
+}

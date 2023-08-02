@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <h1>Filter</h1>
+    <script>
+        var arr = [10,23,56,34,78];
+         document.write(arr + "<br><br>")
+
+       var newArr = arr.filter(display);
+       document.write(newArr + "<br><br>")
+
+       function display(age)
+       {
+        return age <= 23;
+       }
+
+    </script>
+</body>
+</html>

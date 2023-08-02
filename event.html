@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        Name: <input type="text" name="name" id="name" onfocus="focusFunction(this)"  onblur="blurFunction(this)" oninput="inputFunction(this)"><br><br>
+        
+        Phone: <input type="text" name="phn" id="phn" onfocus="focusFunction(this)" onblur="blurFunction(this)"><br><br>
+
+       
+        <select name="city" id="city" onfocus="focusFunction(this)" 
+        onblur="blurFunction(this)">
+
+        <option selected>-Select-</option>
+        <option value="Pune">Pune</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Indore">Indore</option>
+        <option value="Noida">Noida</option>
+
+    </select><br><br>
+
+    <div id="text" style="border:2px solid red;"></div>
+
+
+    <script>
+
+        function focusFunction(element) {
+            element.style.background = "yellow";
+        }
+
+        function blurFunction(element) {
+            element.style.backgroundColor = "";
+        }
+
+        function inputFunction(element){
+            var x = element.value;
+            document.getElementById("test").innerHTML = x;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

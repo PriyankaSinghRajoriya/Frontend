@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <h1>Map Method</h1>
+
+    <script>
+        // var arr = [10, 20, 30, 40, 50]
+        // var newArr = arr.map(function (value, i) {
+        //     value = value*10;
+        //     // console.log(value)
+        //     return value;
+        // })
+        // console.log(arr)
+        // console.log(newArr)
+
+
+
+        var arr = [
+           {Name:'Priyanshi',Salary:500000,Company:'Ubitech'},
+           {Name:'Shivam',Salary:700000,Company:'Accenture'},
+           {Name:'Vishal',Salary:450000,Company:'infotech'},
+           {Name:'Priyanka',Salary:1000000,Company:'infosys'},
+           {Name:'Raj',Salary:1200000,Company:'TCS'},
+        ]
+
+     var newArr = arr.map((element)=>{
+            // console.log(element)
+            return element.Company;
+        })
+        console.log(newArr)
+    </script>
+</body>
+
+</html>

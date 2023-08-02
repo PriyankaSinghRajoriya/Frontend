@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Practice</title>
+</head>
+<body>
+    <h1>Constructor :-</h1>
+
+    <script>
+   var Mobile = function(model_no,sprice)
+   {
+    this.model = model_no;
+    this.color = "red";
+    var price = 3000;
+    this.sp = sprice;
+    this.sellingprice = function(){
+        // return(this.price + this.sp);
+        return(price + this.sp);
+    }
+    this.data = function(){
+        document.write("<br><br> Model_no : " + this.model + " Price: " + this.sellingprice())
+    }
+   }
+
+   var samsung = new Mobile(" Gallaxy ", 2000);
+   samsung.data();
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TemplateString</h1>
+    <script>
+        var x = "Priya"
+        var y = "Dhakad"
+       
+        // document.write("Hello "  + x)
+        // console.log("Hello "  + x)
+
+        // document.write(`Hello ${x} 
+        //     how are you and 
+        // ${y}`)
+
+        // console.log(`Hello ${x} 
+        //        how are you
+        //         and 
+        // ${y}`)
+
+       function fullname(x,y){
+        return `${x} ${y}`
+       }
+
+       let z = `welcome to ${fullname(x,y)}`;
+       document.write(z)
+
+    </script>
+</body>
+</html>

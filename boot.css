@@ -1,0 +1,32 @@
+.container{
+    /* border: 5px solid black; */
+}
+.main{
+    background-color: #FD8D14;
+}
+
+.navbar{
+    background-color: #F4D160;
+}
+.leftbar,.rightbar {
+    
+   background-color: #A8A196;
+}
+.content{
+    background-color: #FFD9C0;
+}
+.footer{
+    background-color: #862B0D;
+    color: white;
+}
+/* .row{
+    border: 2px solid red;
+} */
+
+ul li{
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
